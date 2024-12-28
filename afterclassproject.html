@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="error_message"></p>
+
+    <script>
+        try {
+               add = (a, b) => a + b;
+            document.getElementById("result").innerHTML = add(4, 5)
+        }
+        catch (err) {
+            document.getElementById("error_message").innerHTML = err.message;
+
+        }  
+    </script>
+</body>
+
+</html>
